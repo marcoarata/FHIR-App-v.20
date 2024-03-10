@@ -1,0 +1,25 @@
+logs
+*.log
+npm-debug.log*
+
+node_modules/
+package-lock.json
+dist
+dist-ssr
+*.local
+.env
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+
+client/node_modules/
+client/package-lock.json

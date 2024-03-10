@@ -1,0 +1,28 @@
+{
+  "name": "e-salud-manager",
+  "version": "2.0.0",
+  "description": "Doctor Appointment App",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "server": "nodemon main.js",
+    "client": "npm run dev --prefix client",
+    "client-install": "npm install --prefix client",
+    "postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mongoose": "^8.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
