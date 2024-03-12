@@ -39,16 +39,13 @@ function Login() {
                     <Form.Item label='Password' name='password'>
                         <Input type='password' placeholder='Password' />
                     </Form.Item>
-
                     <Button className='primary-button my-2' htmlType='submit'>LOGIN</Button>
-
                     <Link to='/register' className='anchor mt-2'>CLICK HERE TO REGISTER</Link>
-
                 </Form>
             </div>
         </div>
         </div>
     );
-};
+}
 
 export default Login;

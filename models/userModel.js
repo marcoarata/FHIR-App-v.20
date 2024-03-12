@@ -3,10 +3,6 @@ const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema(
     {
-        name: {
-            type: String,
-            required: true
-        },
         email: {
             type: String,
             required: true
@@ -31,6 +27,9 @@ const userSchema = new mongoose.Schema(
             type: Array,
             default: [],
         },
+        patientId: {
+            type: String
+        }
     },
     {
         timestamps: true,
@@ -38,7 +37,5 @@ const userSchema = new mongoose.Schema(
 );
 
 // user model
-
 const userModel = mongoose.model('users', userSchema);
-
 module.exports = userModel;
